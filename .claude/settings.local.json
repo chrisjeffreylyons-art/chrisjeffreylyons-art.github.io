@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:peytonlewis918.github.io)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:reagantesch.github.io)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/reagantesch/IS201/main/index.html\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/reagantesch/IS201/main/css/styles.css\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/reagantesch/IS201/main/js/scripts.js\")",
+      "Read(//c/Users/chris/**)",
+      "Read(//c/Users/chris/OneDrive/**)"
+    ]
+  }
+}
