@@ -1,0 +1,301 @@
+/* ============================================
+   scratch.css — Chris Lyons Music Page
+   Written from scratch. No Bootstrap.
+============================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ── Body ── */
+body {
+    font-family: 'Playfair Display', Georgia, serif;
+    background-color: #0f0f1a;
+    color: #e8e8f0;
+    line-height: 1.75;
+}
+
+a {
+    color: #b06fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+/* ── Nav div ── */
+.scratch-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    background-color: #08080f;
+    border-bottom: 2px solid #7B2FBE;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.scratch-nav-brand {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
+    color: #b06fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.scratch-nav-links a {
+    color: #ccc;
+    margin-left: 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.scratch-nav-links a:hover {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+/* ── Hero div ── */
+.scratch-hero {
+    background: linear-gradient(135deg, #1a0a2e 0%, #0f1a3a 55%, #0a1a10 100%);
+    padding: 6rem 2rem 5rem;
+    text-align: center;
+    border-bottom: 1px solid #2a2a4a;
+}
+
+.scratch-hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 6vw, 3.8rem);
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+    text-shadow: 0 0 30px rgba(176, 111, 255, 0.5);
+}
+
+.scratch-hero .hero-sub {
+    font-size: 1.15rem;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+.hero-anchors {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-anchors a {
+    color: #b06fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 0.45rem 1.25rem;
+    border: 1px solid #7B2FBE;
+    border-radius: 50rem;
+    transition: all 0.2s;
+}
+
+.hero-anchors a:hover {
+    background: #7B2FBE;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ── Main content div ── */
+.scratch-main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ── Section divs ── */
+.scratch-section {
+    padding: 4rem 0;
+    border-bottom: 1px solid #1e1e30;
+}
+
+.scratch-section:last-child {
+    border-bottom: none;
+}
+
+.scratch-section h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.9rem;
+    color: #c084ff;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #FFD700;
+    padding-left: 1rem;
+}
+
+.scratch-section p {
+    color: #ccc;
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.section-note {
+    color: #888;
+    font-style: italic;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    margin-bottom: 1.75rem;
+}
+
+/* ── Flex layout for about section ── */
+.about-flex {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 240px;
+}
+
+.about-img-wrap {
+    flex: 0 0 240px;
+}
+
+.about-img-wrap img {
+    width: 100%;
+    border-radius: 0.75rem;
+    border: 2px solid #7B2FBE;
+    box-shadow: 0 0 24px rgba(123, 47, 190, 0.35);
+    display: block;
+}
+
+.img-caption {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-top: 0.4rem;
+    font-style: italic;
+}
+
+/* ── Nested lists ── */
+.journey-list {
+    padding-left: 1.5rem;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+.journey-list > li {
+    margin-bottom: 1.75rem;
+    color: #FFD700;
+    font-weight: 700;
+    font-size: 1.05rem;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.journey-list > li > ul {
+    margin-top: 0.6rem;
+    padding-left: 1.5rem;
+    list-style: disc;
+}
+
+.journey-list > li > ul > li {
+    color: #ccc;
+    font-weight: 400;
+    font-size: 0.95rem;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    margin-bottom: 0.35rem;
+}
+
+/* ── YouTube embed ── */
+.video-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    border: 2px solid #7B2FBE;
+    box-shadow: 0 0 30px rgba(123, 47, 190, 0.25);
+}
+
+.video-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ── Tableau ── */
+.tableau-wrap {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 2px solid #7B2FBE;
+    box-shadow: 0 0 30px rgba(123, 47, 190, 0.2);
+}
+
+/* ── Game CTA ── */
+.game-cta {
+    text-align: center;
+}
+
+.game-cta p {
+    max-width: 480px;
+    margin: 0 auto 1.5rem;
+}
+
+.game-link-btn {
+    display: inline-block;
+    background: #7B2FBE;
+    color: #fff;
+    padding: 0.85rem 2.5rem;
+    border-radius: 50rem;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+}
+
+.game-link-btn:hover {
+    background: #5A1E8C;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ── Footer div ── */
+.scratch-footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #08080f;
+    color: #555;
+    font-size: 0.85rem;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    border-top: 1px solid #1e1e30;
+}
+
+.scratch-footer a {
+    color: #b06fff;
+}
+
+/* ── Responsive ── */
+@media (max-width: 620px) {
+    .scratch-hero h1     { font-size: 2rem; }
+    .scratch-nav         { flex-direction: column; gap: 0.75rem; }
+    .scratch-nav-links a { margin-left: 0.75rem; font-size: 0.75rem; }
+    .about-flex          { flex-direction: column; }
+    .about-img-wrap      { flex: 0 0 auto; width: 100%; }
+}
